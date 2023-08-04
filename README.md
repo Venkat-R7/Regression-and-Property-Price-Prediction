@@ -1,1 +1,13 @@
 # Regression-and-Property-Price-Prediction
+
+
+## Introduction
+
+Property price prediction is a very important area of research given the significance of real estate to a nation’s economy and how much people are invested in buying a dream house in terms of money and time. The cost of a property is influenced by a number of factors, for instance the neighbourhood it is situated in, house size, and age of the property. These factors along with range of other factors contribute to the varying trend of housing prices, which has led to numerous research on house price prediction.
+This research focuses on the analysis of Ireland's residential property price register data, which includes location-specific information on every residential property sold in the last decade. Traditional and advanced regression techniques were applied to predict the price of a property based of various attributes. This work applied several machine learning techniques like Multiple linear regression, Random Forest, Lasso Regression and Gradient boosting regression methods. Deep learning methods have shown promising results in varies fields in recent year. In this study a deep connected Artificial Neural Network (ANN) was applied. This research focusses on finding the optimal solution from the above-mentioned regression techniques in designing a model which could be used in predicting property prices.
+The results show that the Random Forest regression model performed best compared to other regression techniques and predicts Irish property prices with the lowest error rate. The Random Forest model was able to predict the property price with an average absolute error of 0.16 units in a standardised form. Furthermore, by visualising the data using different graphs and plots along with a Geographical Information map yielded many valuable details which will serve to aid in decision making for Irish real estate market consumers.
+
+
+## Dataset used for study
+
+The Irish Residential Property Price Register dataset was used in this study and was sourced from the Property Service Regulatory Authority (PSRA) [20] of Ireland. The residential property register information is a compilation of details individuals provided to the appropriate revenue commissioners as part of the stamp duty collection for the registration of properties in various counties of Ireland from 2010. The PSRA also has data on the commercial lease registry, however the information is far more limited and only includes the cost and location of the commercial premises. Therefore, only residential property registry data was considered for analysis and price prediction in this study.
