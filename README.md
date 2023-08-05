@@ -67,7 +67,7 @@ The RF model had the best performance based on the results of the baseline model
 Results from the RF model 2 include RMSE, MAE, and MAPE values of 0.1697, 0.1318, and 0.2284, respectively. With similar RMSE and MAE and a significant improvement of MAPE value the parameter tuned RF model outperformed its baseline performance. The MAPE score indicates that, on average, predictions differ from actual values by 22.84%, which is less than the baseline RF performance of 23.54%.
 
 
-![](Images/results_tuned1.jpg)
+![](Images/results_tunes1.jpg)
 ![](Images/results_tuned2.jpg)
 
 The MLR, Lasso and GBM models all showed considerable improvement compared to their respective baseline models based on the error. The MLR and Lasso regression models showed similar results after the models were tuned with their best parameters. The models performed with error values of 0.18, 0.14 and 0.24 (RMSE, MAE and MAPE). The two ANN models tuned, the one with and without being regularised both did not show any significant improvement from the baseline ANN models. The ANN model performed poorly with all error metrics above 0.20 units.
