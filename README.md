@@ -48,8 +48,6 @@ The data includes information about property sales for the period from January 2
 3. Mean Absolute Percentage Error
 
 
-## Data analysis and Insights
-
 ## Baseline regression model results
 
 As the initial step in regression model development to predict property price, baseline models were developed. The error metrics for each of the five models are shown in Table. The same results are displayed graphically in Figure. The evaluation metrics RMSE, MAE and MAPE are used to compare the models.
@@ -78,3 +76,17 @@ The MLR, Lasso and GBM models all showed considerable improvement compared to th
 More accurate prediction requires better data or data collecting. The Irish property register data contains only minimal information about each property. For instance, a property's pricing is significantly influenced by the qualities it offers, such as the number of rooms, bathrooms, and distance from a city’s intersection etc. This in-depth information is lagging in the Irish Property data. With better data, containing more features the efficiency of the predictive model can be improved.
 
 The study can be further extended by including Irish commercial lease information dataset.
+
+
+## Data analysis and Insights
+
+https://github.com/Venkat-R7/PSRA-Property-Price-Register-Analysis-Tableau
+
+Interpretation of the data is very important as it could help in deriving meaningful information for appropriate decision making. The Irish property price register data was analysed using graphical techniques such as plots and maps to gain valuable insights. For a deeper understanding two other datasets were used as a reference. The county-wise population of Ireland was downloaded. The population details of Ireland are available for the years 2011, 2016 and 2022 from the official census and intermediate census data. To further analyse the demographic details, the area information of each county in Ireland was downloaded. The area dataset provides the size of each county in Ireland in km2.
+
+Geographic information system (GIS) was used to visualise the data geographically utilising location-based information. GIS is a system that uses data with unique location-based information to display it on a map which allows location-based pattern recognition, clustering of information and predictive forecasting. Two maps were created using the Irish property price data. The first map is plotted with the average change in county-by-county real estate prices over time. While every property sale detail is mapped on the second plot.
+Each property’s address is listed in the Irish property price registry, however latitude and longitude are needed for each location in order for this information to be plotted on a map.
+To get the latitude and longitude information, Geo-Coding technique was used. Geo-Coding is the process of locating a place using latitude and longitude by means of its address or place name. There are several applications that support Geo-Coding like Google Earth.
+
+The study encountered a bottleneck since geo-coding often has a daily rate limit and comes with a high cost. Google Earth is the most reliable and accurate platform available, however it allows only 2500 locations to be geo-coded per day, beyond this limit the information comes at a cost. Considering this, an open-source application ‘Nominatim’ was used to Geo-Code the data. Nominatim is less accurate compared to Google Earth. In some cases, Nominatim was not able to find a few locations and also mis-located some places. Considering the resource limitation and the per day Geo-Coding rate limit, properties in South and South-Western counties of Ireland were Geo-Coded as a proof of concept.
+
